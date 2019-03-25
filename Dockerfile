@@ -3,8 +3,6 @@ FROM amazonlinux:2
 ARG OTP_VERSION="21.3"
 ARG ELIXIR_VERSION="1.8.1"
 
-RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
-    locale-gen
 ENV LANG en_US.UTF-8  
 ENV LANGUAGE en_US:en  
 ENV LC_ALL en_US.UTF-8     
