@@ -21,4 +21,4 @@ RUN wget https://github.com/elixir-lang/elixir/archive/v${ELIXIR_VERSION}.zip &&
     unzip v${ELIXIR_VERSION}.zip && rm v${ELIXIR_VERSION}.zip && \
     cd elixir-${ELIXIR_VERSION} && \
     make && make install && \
-    cd .. && rm -rf elixir-{ELIXIR_VERSION}
+    cd .. && rm -rf elixir-${ELIXIR_VERSION}
